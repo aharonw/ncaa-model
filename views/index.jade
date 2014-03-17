@@ -1,0 +1,42 @@
+extends layout
+
+block content
+  #phone-panel
+  
+  .wrapper
+    table(id="stats")
+      th Y
+      th S
+      th Team
+      th 3-pt %
+      th Steals
+      th Height
+      th Wins
+      th AW-INDEX
+      for team in teams
+        if team.wins > 0
+          tr(class='winner')
+            td= team.year
+            td= team.seed
+            td
+              a(href='#{team.url}')= team.name
+            td= team.three
+            td #{team.stealsPer}
+            td= team.avgHeight
+            td= team.wins
+            td= team.awScore
+        else
+          tr(class="loser")
+            td= team.year
+            td= team.seed
+            td
+              a(href='#{team.url}')= team.name
+            td= team.three
+            td #{team.stealsPer}
+            td= team.avgHeight
+            td= team.wins
+            td= team.awScore
+
+  
+  script
+    new Tablesort(document.getElementById('stats'));

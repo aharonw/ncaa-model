@@ -1,0 +1,32 @@
+#header {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  padding-top: 18px;
+}
+.head-logo {
+  background-image: url("/images/logo.png");
+  width: 220px;
+  height: 28px;
+  background-size: cover;
+  float: left;
+}
+.nav-links {
+  float: right;
+  margin-top: 5px;
+}
+.nav-links li {
+  display: inline;
+  background-color: #fff;
+  padding: 8px 8px;
+  font-size: 15px;
+  margin-right: 10px;
+  color: #08c;
+  cursor: pointer;
+}
+.nav-links li:last-child {
+  margin-right: 0px;
+}
+.nav-links li:hover {
+  background-color: #eee;
+}

@@ -1,0 +1,3 @@
+# AW NCAA Bracket Index
+
+Small app for scraping tournament team stats and calculating an index for each team. Used this to make bracket picks in 2013 -- didn't work so well. Might update this for 2014...
